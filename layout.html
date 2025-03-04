@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ua">
 <head>
-	<title>Layouts</title>
+	<title>Layout</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/vendors.css">
@@ -11,60 +11,26 @@
 </head>
 
 <body>
-	<main class="qela-fullscreen qela-pad3">
-		<aside class="fixed-top pt-2 d-lg-block d-none" style="width: 280px;">
-    <a class="text-center d-block text-secondary display-1 mb-2"
-        href="https://andreyfront.owlweb.com.ua/Qela-mob/">Qela-mob</a>
-    <nav>
-        <ol class="d-flex flex-column gap-2">
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/layout1.html" class="text-black">Layout
-                    top-bottom-01</a></li>
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/layout2.html" class="text-black">Layout
-                    top-bottom-02</a></li>
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/layout3.html" class="text-black">Layout
-                    top-bottom-03</a></li>
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/layout4.html" class="text-black">Layout
-                    top-bottom-04</a></li>
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/layout-top.html" class="text-black">Layout
-                    top-only</a></li>
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/symple.html" class="text-black">Layout symple</a>
-            </li>
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/success1.html" class="text-black">Layout success
-                    simple</a></li>
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/success2.html" class="text-black">Layout success
-                    actions-btn</a></li>
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/success3.html" class="text-black">Layout success
-                    actions-btn img</a></li>
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/success4.html" class="text-black">Layout success
-                    actions-list</a></li>
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/success5.html" class="text-black">Layaut success
-                    actions-btn range</a></li>
-            <li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/loader.html" class="text-black">Layaut page
-                    loader</a></li>
-        </ol>
-    </nav>
-</aside>
+	<main class="qela-fullscreen">
 		<div class="qela-top bg-white">
-			<nav class="navbar bg-transparent qela-topbar">
-				<a class="navbar-brand p-0" href="#">
-					<img src="img/logo-3.svg">
-				</a>
-				<div class="d-flex gap-1 align-content-center">
-					<a href="#" class="qela-btn-top">
-						<div class="ic-add left"></div>
-						<div class="text-black right">
-							<span>150</span>
-							<img src="img/icons/orden-red.svg" alt="#">
-						</div>
-					</a>
-					<a href="#" class="qela-avatar">
-						<img src="img/avatar.jpg" alt="#">
-					</a>
-				</div>
-				<a href="#" class="qela-avatar bg-secondary">
-					<img src="img/icons/F-icon.svg" alt="#">
-				</a>
+			<nav class="navbar bg-transparent qela-navbar">
+				<button href="#" class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"></button>
+				<span class="h6 text-center">
+					Voting
+				</span>
+				<button type="button" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</button>
 			</nav>
+			<ul class="nav nav-pills nav-fill shadow-none qela-tab ">
+				<li class="nav-item">
+					<a class="nav-link bg-transparent active" aria-current="page" href="#">General</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link bg-transparent" href="#">Local</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link bg-transparent" href="#">History</a>
+				</li>
+			</ul>
 		</div>
 		<!--content-->
 		<div class="flex-grow-1">
@@ -90,9 +56,44 @@
 			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
 		</div>
 		<!--content-->
-		<div class="qela-bottom bg-white px-3 py-4 d-flex flex-column gap-2">
-			<button type="button" class="btn btn-primary">Vote</button>
-			<button type="button" class="btn btn-outline-secondary">Back to the vote list</button>
+		<div class="qela-bottom bg-white">
+			<ul class="nav nav-pills nav-fill bg-transparent shadow-none qela-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="ic-home icon"></i>
+						<i class="ic-home-filled icon-filled"></i>
+						Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="ic-user icon"></i>
+						<i class="ic-user-filled icon-filled"></i>
+						Profile
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="ic-diamond icon"></i>
+						<i class="ic-diamond-filled icon-filled"></i>
+						Quests
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#">
+						<i class="ic-voting icon"></i>
+						<i class="ic-voting-filled icon-filled"></i>
+						Voting
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="ic-qela icon"></i>
+						<i class="ic-qela-filled-28 icon-filled"></i>
+						Organization
+					</a>
+				</li>
+			</ul>
 		</div>
 	</main>
 	<!-- =========================== -->
